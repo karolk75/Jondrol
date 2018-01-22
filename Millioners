@@ -68,6 +68,7 @@ int main()
     cout << " Do you want to try again?" << endl;
     cout << "1.Yes 2.No"<<endl;
     cin >>anwser;
+    cout << endl;
     }while(anwser==1);
  
     return 0;
