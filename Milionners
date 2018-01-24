@@ -1,0 +1,64 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int main() {
+   
+    char answer1 = 'c' || 'C';
+    char answer2 = 'c' || 'C';
+    char answer3 = 'd' || 'D';
+   
+   
+    int question, answer4;
+    cout<<"Welcome to the tournament!"<<endl;
+	cout<<"You will answer for questions!"<<endl;
+	cout<<"If your answers are correct, you will recive lots of money.";
+	cout<<"Remember! You can win prize: 1 000 000$!"<<endl;
+	cout<<"If you choose wrong answer, you will end game without any money!"<<endl;
+	cout << "press any button to play game 2 - y, 1- n" << endl;
+	cin >> answer4;
+	while(answer4 == 2)
+	{
+    cin >>question;
+   
+   
+    srand( time( NULL ) );
+    question =( rand() % 3 ) + 1;
+   
+    switch( question )
+    {
+       
+    case 1:
+    {
+        //char wpisane = 'b' || 'B';
+         cout<<"The capital of Poland is:"<<endl;
+    cout<<"a - Krakow"<<endl;
+    cout<<"b - Poznan"<<endl;
+    cout<<"c - Warsaw"<<endl;
+    cout<<"d - Koszalin"<<endl;
+        std::cin >> answer1;
+       
+       
+        if( answer1 == 'c' || 'C' )
+             std::cout << "(C - Warsaw) Correct! . " << answer1 << endl;
+        else
+             std::cout << "wrong" << endl;
+      }
+        break;
+       
+    case 2:
+       cout << "dupa";
+       
+        break;
+       
+    case 3:
+        
+       cout<< "dupa1";
+        break;
+    }
+   
+    return 0;
+}
+
+cout<< "good bye";
+}
